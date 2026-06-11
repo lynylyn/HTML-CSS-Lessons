@@ -1,0 +1,20 @@
+@font-face {
+    font-family:myFont;
+    src: url(font/FIRES\ PERSONAL\ USE.ttf)
+}
+
+html{
+    background-color: black
+}
+
+body{
+    background-color: brown;
+    text-align:center;
+    font-family:papyrus, fantasy
+}
+
+h1{
+    color:rgb(255, 72, 0);
+    font-family: myFont;
+    text-align:center;
+}

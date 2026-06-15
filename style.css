@@ -14,7 +14,77 @@ body{
 }
 
 h1{
-    color:rgb(255, 72, 0);
+    color:rgb(255, 136, 0);
     font-family: myFont;
     text-align:center;
+}
+
+nav {
+    background-color: rgb(94, 10, 10)
+
+}
+
+nav ul {
+
+    list-style-type: none;
+    
+    margin: 0;
+
+    padding: 0;
+
+}
+
+nav li {
+
+    background-color: rgb(94, 10, 10);
+    margin-bottom:20px;
+    padding-bottom: 5px;
+    font-size: large;
+}
+
+nav a {
+
+    color:red;
+
+    text-decoration: none
+
+}
+
+.grid-container{
+    display:inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color:rgb(168, 44, 44);
+    padding: 10px;
+}
+
+.item{
+    background-color:rgb(206, 5, 5);
+    border: 1px solid black;
+    padding: 20px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+}
+
+.item2{
+    background-color:rgb(206, 5, 5);
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    grid-column: span 2;
+    
+}
+
+.item3{
+    background-color:rgb(206, 5, 5);
+    border: 1px solid black;
+    padding: 20px;
+    align-content: center;
+    text-align: left;
+    grid-column: span 3;
+    
 }

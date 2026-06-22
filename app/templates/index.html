@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en-AU"
+<html lang="en-AU">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Evil Pals</title>
         <link rel="stylesheet" href="style.css">
     </head>
@@ -20,15 +20,25 @@
             </div>
             <!--Heading Section-->
             <div class="item2">
-                <h1>Evil Pals</h1>
+                {% if title %}
+                <title>{{ title }} - Evil Pals</title>
+                {% else %}
+                <title>Unwelcome to Evil Pals.</title>
+                {% endif %}
             </div>
             <!--Content Section-->
             <div class="item3">
-                <h3>Unwelcome.</h3>
+                <h3>Unwelcome, {{ user.username }}.</h3>
                 <p>You are <i>not</i> welcome to Evil Pals, a website for evil people to make frie... </br></br>I mean, plot world domination.</p>
                 <a href="https://www.wikihow.com/Act-Evil">Tutorial on pretending to be evil</br></br></a>
                 <img src="images/seeminglyevilman.jpg", alt="Depiction of a seemingly evil man", style="width:20%; height:20%;">
             </div>
         </div>
+    </body>
+    <body>
+        <h1>Hi, {{ user.username }}!</h1>
+        {% for post in posts %}
+        <div><p>{{ post.author.username }} says: <b>{{ post.body }}</b></p></div>
+        {% endfor %}
     </body>
 </html>
